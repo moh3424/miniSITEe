@@ -1,2 +1,3 @@
-# miniSITEe
-uin mini site en html
+# miniSITE
+un mini site en html
+que j'ai fais moi même comme un grand
