@@ -11,6 +11,7 @@
 .fond_rouge{
     background: red;
 }
+
 .fond_vert{
     background:green;
 }
@@ -27,18 +28,21 @@ body{
 }
 /* le haut de page */
 header{
-    height:236; /*hauteur de l'élément*/
+    background: url("../img/panora_1.jpg") center center no-repeat;
+    height: 410px; /*hauteur de l'élément*/
     border:2px solid whitesmoke;
 }
 /* le coté de la page */
 aside{
-    width: 280px; /*largeur de l'élément*/
+    width: 240px; /*largeur de l'élément*/
     float: left;
-}
+    padding: 20px;
+}  
 /* le contenu principale */
 #main{
-    width: 700px;
-    float: right; 
+    width: 680px;
+    float: right;
+    padding: 10px; 
 }
 .clear{
     clear: both;
@@ -50,10 +54,13 @@ footer{
 }
 /* l'embalage de toute la page */
 #wrapper{
-    width: 998px;
+    width: 1000px;
     border: 1px solid black;
     margin-top: 20px;
     margin-left:auto;
     margin-right: auto;
 }
+
+
+ 
 
