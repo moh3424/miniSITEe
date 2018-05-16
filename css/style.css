@@ -21,6 +21,40 @@
     background: gray;
 }
 body{
+    margin: auto; /* la marge extérieur d'un élément */
     background-color: paleturquoise;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+/* le haut de page */
+header{
+    height:236; /*hauteur de l'élément*/
+    border:2px solid whitesmoke;
+}
+/* le coté de la page */
+aside{
+    width: 280px; /*largeur de l'élément*/
+    float: left;
+}
+/* le contenu principale */
+#main{
+    width: 700px;
+    float: right; 
+}
+.clear{
+    clear: both;
+}
+/* le pied de page */
+footer{
+    height:200px; /*hauteur de l'élément*/
+    border:20px solid peru;   /*berdure de l'élément: widht style color*/    
+}
+/* l'embalage de toute la page */
+#wrapper{
+    width: 998px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right: auto;
+   
+}
+

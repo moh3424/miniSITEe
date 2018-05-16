@@ -10,13 +10,41 @@
     </head>
     <body>
         <!-- debut de la div principale -->
-        <div>
-            <header class="fond_vert">En tête de la page</header><!-- en-tête de la page-->
-            <nav class="fond_bleu">Navigation</nav> <!-- la navigation de la page -->
-            <footer>le pied de page</footer> <!-- Le pied de la page -->
-            <article>contenu textuel</article><!-- contenu contextuel -->
-            <aside class="fond_orange">le côté de la page</aside><!--Pour une division sur le côté de la page -->
+        <div id="wrapper">
+            <header class="fond_vert">
+                <h1>En tête de la page</h1><!-- en-tête de la page-->
+                <p>Ceci et un paragraphe de test</p>
+                <p>Avec un peu de texte dans un autre paragraphe</p>
+            </header>
+            <aside class="fond_orange">
+                    <h2>Bienvenue</h2>
+                        <nav class="fond_bleu">Navigation <!-- la navigation de la page -->
+                            <ul>
+                                <li>Menu # 01</li>
+                                <li>Menu # 02</li>
+                                <li>Menu # 03</li>
+                                <li>Menu # 04</li>
+                                <li>Menu # 05</li>
+                                <li>Menu # 06</li>
+                                <li>Menu # 07</li>
+                                <li>Menu # 08</li>
+                            </ul>   
+                        </nav>    
+            </aside><!--Pour une division sur le côté de la page -->         
+            <div id="main">
+            <!-- Article avec son h2 -->
+                <article>
+                    <h2>Contenu Textuel</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quae voluptatem reiciendis repudiandae excepturi aliquam blanditiis reprehenderit a nobis, ea, itaque dolorum, adipisci dolorem. Eaque temporibus voluptas officiis consequuntur.</p>
+                    <p class="fond_gris">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quae voluptatem reiciendis repudiandae excepturi aliquam blanditiis reprehenderit a nobis, ea, itaque dolorum, adipisci dolorem. Eaque temporibus voluptas officiis consequuntur.</p>
+                    <p class="fond_gris">Je suis le <span class="fond_rouge">Plus Fort en code</span>!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quae voluptatem reiciendis repudiandae excepturi aliquam blanditiis reprehenderit a nobis, ea, itaque dolorum, adipisci dolorem. Eaque temporibus voluptas officiis consequuntur.</p>
+                </article><!-- contenu contextuel -->
+            </div>
+            <!-- fermeturede la div main! -->
+            <div class="clear"></div>
             <footer class="fond_gris">le pied de la page</footer> <!--le pied de la page-->
         </div>
+        <!-- fermeture de wrapper -->
     </body>
 </html>
