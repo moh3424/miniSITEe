@@ -12,30 +12,79 @@
         <!-- debut de la div principale -->
         <div id="wrapper">
             <header>
-                <h1><a href="index.html">Le MiniSite de Mohamed</a></h1><!-- en-tête de la page-->
+                <h1><a href="index.html">MiniSite de Mohamed</a></h1><!-- en-tête de la page-->
             </header>
             <aside class="fond_orange">
-                    <h2>Bienvenue</h2>
-                        <nav class="fond_bleu"><!-- la navigation de la page -->
-                            <ul>
-                                <li><a href="index.html" title="MiniSite: Acceuil">Acceuil</a></li>
-                                <li><a href="photos.html" title="MiniSite: Photos">Photos</a></li>
-                                <li><a href="text.html" title="MiniSite: Texte">Texte</a></li>
-                                <li><a href="formulaire" title="MiniSite: Formulaire">Formulaire</a></li>
-                                <li><a href="#" title="">Menu #05</a></li>
-                                <li><a href="#" title="">Menu # 06</a></li>
-                                <li><a href="#" title="">Menu # 07</a></li>
-                                <li><a href="#" title="">Menu # 08</a></li>
-                            </ul>   
-                        </nav>    
+                <h2>Bienvenue</h2>
+                <nav class="fond_bleu"><!-- la navigation de la page -->
+                    <ul>
+                        <li><a href="index.html" title="MiniSite: Acceuil">Acceuil</a></li>
+                        <li><a href="photos.html" title="MiniSite: Photos">Photos</a></li>
+                        <li><a href="text.html" title="MiniSite: Texte">Texte</a></li>
+                        <li><a href="formulaire.html" title="MiniSite: Formulaire">Formulaire</a></li>
+                        <li><a href="tableau.html" title="MiniSite: Tableau">Tableau</a></li>
+                        <li><a href="mignon.html" title="MiniSite:Mignon">Mignon</a></li>
+                        <li><a href="bordure.html" title="MiniSite: bordures">Bordure</a></li>
+                        <li><a href="#" title="">Menu # 08</a></li>
+                    </ul>   
+                </nav>    
             </aside><!--Pour une division sur le côté de la page -->         
             <div id="main">
-            <!-- Article avec son h2 -->
-                <article>
-                    <h2>Formulaire</h2>
-                    
-                </article><!-- contenu contextuel -->
-            </div>
+            <h2>Un premier Formulaire</h2>
+            <!-- je déclare un formulaire avec la balise form -->
+            <form>
+                <!-- une étiquette pour le 1er champs du formulaire -->
+                <label for="pseudo">Votre pseudo*</label>
+                <input type="text" name="pseudo" id="pseudo" placeholder="Rentrez votre pseudo" required><br/>
+                 <!-- une étiquette pour le 2eme champs du formulaire -->
+                <label for="password">mot de passe*</label>
+                <input type="password" name="password" id="pseudo" placeholder="Rentrez votre mot de passe" required><br/>
+                <!-- input et label pour le courriel -->
+                <br>
+                <label for="email">Votre courriel </label>
+                <input type="email" name="email" id="email" aria-placeholder="Votre courriel" required>
+                <br>
+                <!-- un bouton pour envoyer le formulaire -->
+                <input type="submit" name="inscription" value="Envoyer">-
+                <input type="reset" name="annulation" value="Annulation">
+             </form>
+            <hr>
+            <h2>Un petit <em>sondage</em></h2>
+            <p><small>Un autre formulaire</small></p>
+            <form action="toto.php" method="POST">
+                <fieldset>
+                     <legend>A propos de CSS:</legend>
+                    <p>Savez-vous ce que veut dire<strong>CSS</strong>??</p>
+                    <!-- des boutons radio le 1er est coché -->
+                    <input type="radio" name="CSS" value="oui" checked>
+                    <label for="oui" class="inline">Oui</label>
+                    <input type="radio" name="CSS" value="non">
+                    <label for="non" class="inline">Non</label>
+                    <br>
+                    <label for="utilise">Si oui, vous en servez-vous ?</label>
+                    <!-- select un menu déroulant ou liste déroulante avec ses options -->
+                    <select name="utilise">
+                        <option value="toujour">toujoure</option>
+                        <option value="parfois">parfois</option>
+                        <option value="jamais">jamais</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Vos cordonnées :</legend>
+                    <label for="email">Votre courriel*</label>
+                    <input type="email" name="email" size="25" value="email" required>
+                    <label for="commentaire">Donnez-nous votre avis: *</label>
+                    <textarea name="commentaire" cols="30" rows="4" placeholder="Donnez-nous votre avis" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Envoyez votre réponse</legend>
+                    <P>
+                        <input type="submit" name="envoyez" value="Envoyez votre  réponse">
+                        <input type="reset" name="annulez" value="Annulez">
+                    </P>
+                </fieldset>
+            </form>
+            </div>               
             <!-- fermeturede la div main! -->
             <div class="clear"></div>
             <footer class="fond_gris">le pied de la page</footer> <!--le pied de la page-->

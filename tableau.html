@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie_edge">
+        <title>miniSITE: accueil</title>
+        <!-- la feuille de style externe -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- debut de la div principale -->
+        <div id="wrapper">
+            <header>
+                <h1><a href="index.html"MiniSite de Mohamed</a></h1><!-- en-tête de la page-->
+            </header>  
+            <aside class="fond_orange">
+                    <h2>Bienvenue</h2>
+                    <nav class="fond_bleu"><!-- la navigation de la page -->
+                        <ul>
+                            <li><a href="index.html" title="MiniSite: Acceuil">Acceuil</a></li>
+                            <li><a href="photos.html" title="MiniSite: Photos">Photos</a></li>
+                            <li><a href="text.html" title="MiniSite: Texte">Texte</a></li>
+                            <li><a href="formulaire.html" title="MiniSite: Formulaire">Formulaire</a></li>
+                            <li><a href="tableau.html" title="MiniSite: Tableau">Tableau</a></li>
+                            <li><a href="mignon.html" title="">Mignon</a></li>
+                            <li><a href="#" title="MiniSite: Bordures">les bordures</a></li>
+                            <li><a href="#" title="">Menu # 08</a></li>
+                        </ul>   
+                    </nav>     
+            </aside><!--Pour une division sur le côté de la page -->         
+            <div id="main">
+            <!-- Article avec son h2 -->
+            <h2>Mon Premier Tableau</h2>
+                        <table>
+                            <caption>La liste des salarier de Pantin</caption>
+                            <thead>
+                                <tr> 
+                                    <!-- tr table row une rangée de table -->
+                                    <th>Nom</th>
+                                    <!-- th table head une cellule d'en-tête  -->
+                                    <th>Prénom</th>
+                                    <th>courriel</th>
+                                </tr>
+                            </thead><!--th -->
+                            <tbody>
+                                <tr>
+                                    <!-- td table data une cellul ede tableau -->
+                                   <td>Mohamed</td>
+                                   <td>YESSAD</td>
+                                   <td>yessad.mohamed@gmail.com</td>
+                                </tr>
+                                     <tr class="fond_gris">
+                                        <td>Akbar</td>
+                                        <td>Khan</td>
+                                        <td>Khan.akbar@gmail.com</td>
+                                    </tr>
+                                     <tr>
+                                        <td>Akbar</td>
+                                        <td>Khan</td>
+                                        <td>Khan.akbar@gmail.com</td>
+                                    </tr>
+                                    <tr class="fond_gris">
+                                        <td>Akbar</td>
+                                        <td>Khan</td>
+                                        <td>Khan.akbar@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Akbar</td>
+                                        <td>Khan</td>
+                                        <td>Khan.akbar@gmail.com</td>
+                                    </tr>
+                                    <tr class="fond_gris">
+                                        <td>Akbar</td>
+                                        <td>Khan</td>
+                                        <td>Khan.akbar@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Akbar</td>
+                                        <td>Khan</td>
+                                        <td>Khan.akbar@gmail.com</td>
+                                    </tr>                                       
+                                <tfoot>
+                                     <tr>
+                                        <td>Akbar</td>
+                                        <td>Khan</td>
+                                        <td>Khan.akbar@gmail.com</td>
+                                    </tr>
+                                </tfoot>
+                            </tbody>
+                        </table>
+                        <hr>
+                        <h2>Un Tableau avec des cellules fusionnées</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Mois</th>
+                                    <th>Dépenses</th>
+                                    <th>Recettes</th>
+                                </tr>
+                            </thead> 
+                            <tbody>
+                                <tr>
+                                    <td>Janvier</td>
+                                    <td>250 €</td>
+                                    <td>1100 €</td>
+                                </tr>
+                                <tr>
+                                    <td>Fevrier</td>
+                                    <td>20 €</td>
+                                    <td>1250 €</td>
+                                </tr>
+                                <tr>
+                                    <td>Mars</td>
+                                    <td>20 €</td>
+                                    <td>1250 €</td>
+                                </tr>  
+                                <tr>
+                                    <td colspan="3">Total : 3600 €</td>
+                                </tr>                                                              
+                            </tbody>
+                              
+                        </table>
+            </div>
+            <!-- fermeturede la div main! -->
+            <div class="clear"></div>
+            <footer class="fond_gris">le pied de la page</footer> <!--le pied de la page-->
+        </div>
+        <!-- fermeture de wrapper -->
+    </body>
+</html>

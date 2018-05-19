@@ -23,14 +23,16 @@
 }
 body{
     margin: auto; /* la marge extérieur d'un élément */
-    background-color: paleturquoise;
+    /* background-color: paleturquoise; */
+     /* background: linear-gradient(#FF0,#00f,#059); */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 /* le haut de page */
 header{
-    background: url("../img/panora_1.jpg") center center no-repeat;
+    /* background: url("../img/panora_1.jpg") center center no-repeat; */
     height: 410px; /*hauteur de l'élément*/
     border:2px solid whitesmoke;
+    background: url("../img/panora_1.jpg") center center no-repeat,  linear-gradient(lightskyblue, whitesmoke);
 }
 /* le coté de la page */
 aside{
@@ -40,7 +42,7 @@ aside{
 }  
 /* le contenu principale */
 #main{
-    width: 680px;
+    width: 880px;
     float: right;
     padding: 10px; 
 }
@@ -54,12 +56,13 @@ footer{
 }
 /* l'embalage de toute la page */
 #wrapper{
-    width: 1000px;
+    width: 1200px;
     border: 1px solid black;
     margin-top: 20px;
     margin-left:auto;
     margin-right: auto;
 }
+<<<<<<< HEAD
 a{
     text-decoration:none;
     letter-spacing: 10px;
@@ -71,7 +74,70 @@ li{
     list-style-type: none;
     line-height: 40px;
 }
+=======
+form{
+    background: whitesmoke;
+    padding: 10px;
+}
+fieldset{
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid olive;
+}
+legend{
+    font-weight: 800;
+    color:olivedrab;
+}
+label{
+    background-color: wheat;
+    color: violet;
+    display: block;
+    margin-top: 10px;
+}
+label.inline{
+    display: inline;
+    margin-right: 50px;
+}
+input, textarea, select{
+    border: 1px solid olive;
+    padding:3px;
+    box-shadow: 5px 1px 2px red ;
+}
+table, td, th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 600px;
+}
+td, th{
+    padding: 10px;          
+}
+th, tfoot{
+    text-align: left;
+    background: orangered;
+    color: whitesmoke;  
+}
+tr:hover {
+    background-color: yellowgreen;
+}
+caption, th, tfoot{
+    text-align: left;
+    background: orangered;
+    border: 2px solid black;
+    padding:3px;
+>>>>>>> eaeeba0817dd3b7c70e56127e6b35e21deeffcba
 
-
+}
+caption{
+    caption-side: top;
+    text-transform:  uppercase;
+}
+.filetgauche{
+    border-left: 3px  solid blanchedalmond;
+}
+.cartouche {
+    border: 1px solid orange;
+    border-radius: 100px;
+    padding:25px;
+}
  
 
