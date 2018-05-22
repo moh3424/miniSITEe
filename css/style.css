@@ -62,6 +62,19 @@ footer{
     margin-left:auto;
     margin-right: auto;
 }
+<<<<<<< HEAD
+a{
+    text-decoration:none;
+    letter-spacing: 10px;
+}
+h1{
+    text-align: center; 
+}
+li{
+    list-style-type: none;
+    line-height: 40px;
+}
+=======
 form{
     background: whitesmoke;
     padding: 10px;
@@ -111,6 +124,7 @@ caption, th, tfoot{
     background: orangered;
     border: 2px solid black;
     padding:3px;
+>>>>>>> eaeeba0817dd3b7c70e56127e6b35e21deeffcba
 
 }
 caption{
