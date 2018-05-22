@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* css document */
+body{
+    /* margin: auto; */
+    background:violet;
+   
+}
+/* pour alterner les couleur des div */
+.c1{
+    background-color: pink;
+    border-radius: 20px; 
+    text-align: centre;
+    color: olive;
+}
+.c2{
+    background-color: lightcoral;
+   
+}
+/* les styles communs aux div de la page */
+.c1, .c2{
+    border: 0.2em solid white;
+    width: 19em;
+    height:19em;
+    margin:20px;
+    border-radius: 40% 5% 40% 40%; 
+    text-align: center;
+    color: olive;
+    float:left;
+}
+.clear{
+    clear: both;
+}

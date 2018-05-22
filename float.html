@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie_edge">
+        <title>miniSITE: le float</title>
+        <!-- la feuille de style externe -->
+        <!-- <link href="css/style.css" rel="stylesheet"> -->
+        <style>
+            /* les styles pour l'exercice du float */
+            body{
+                margin: auto;
+                background-color: antiquewhite;
+            }
+            p{
+                background-color: lightblue;
+                /* width: 50%; */
+            }
+            /* toutes les div de la page */
+            div{
+            width: 90%;
+            height: 60vh;
+            margin: 0 auto; 
+            background-color:lightsteelblue;
+            /* border: 5px double orchid; */
+            }
+            /* la class boite qui contient les images et que l'on fait flotter  */
+            .boite{
+                height: 10vh;
+                width: 18vh;
+                padding: 5vh;
+                margin: 2vh;
+                border: 5px double orchid;
+                background: url(img/siamois.jpg);
+                background-repeat:no-repeat;
+                float: left;
+            }
+            .boite:hover{
+                border: 1px double olive;
+                font-size: 100px;
+                color: white;
+            }
+            .clear{
+                clear:both;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Le Float introduction aux types de balises, block et inline</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nostrum error similique et enim temporibus voluptate voluptas sequi omnis, alias nihil tempore consequatur tenetur maiores placeat! Praesentium itaque quod aliquid!</p>
+        <ul>
+            <li>Les éléments de type <strong>block</strong> <em>block</em> (h1, p, ul, ol, table, blockquote,etc.)</li>
+            <li>Les éléments de type <strong>inline</strong> <em>en-ligne</em>  (a, img, strong, abbr, em, etc.)</li>
+        </ul>
+        <hr>
+       
+        <div>
+            <div class="boite">1</div>
+            <div class="boite">2</div>
+            <div class="boite">3</div>
+            <div class="boite">4</div>
+            <div class="boite">5</div>
+            <div class="boite">6</div>
+            <div class="boite">7</div>
+            <div class="boite">8</div>
+        </div>
+       
+        <p class="clear"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptatibus, vel ad eaque ab error, eius alias quas mollitia libero nemo, soluta modi minima quisquam id sapiente totam omnis beatae!
+        </p>
+        <hr>
+    </body>
+</html>
