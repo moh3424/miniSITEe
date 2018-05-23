@@ -16,7 +16,7 @@
     background:green;
 }
 .fond_bleu{
-    background: lightskyblue;
+    background: blueviolet;
 }
 .fond_gris{
     background: gray;
@@ -62,19 +62,17 @@ footer{
     margin-left:auto;
     margin-right: auto;
 }
-<<<<<<< HEAD
 a{
-    text-decoration:none;
-    letter-spacing: 10px;
+    text-decoration: none;
+    letter-spacing: 5px;
 }
 h1{
     text-align: center; 
 }
-li{
+nav ul li{
     list-style-type: none;
-    line-height: 40px;
+     line-height: 30px; 
 }
-=======
 form{
     background: whitesmoke;
     padding: 10px;
@@ -124,7 +122,6 @@ caption, th, tfoot{
     background: orangered;
     border: 2px solid black;
     padding:3px;
->>>>>>> eaeeba0817dd3b7c70e56127e6b35e21deeffcba
 
 }
 caption{
@@ -139,5 +136,36 @@ caption{
     border-radius: 100px;
     padding:25px;
 }
- 
-
+ /* les pseudos class */
+ /* Quand le lien n'est pas visité */
+ a:link{
+     color: orange;
+ }
+/* Quand le lien a été visité */
+a:visited{
+    color:lime;
+}
+/* Au survol de la souris */
+a:hover{
+    color:whitesmoke;
+    background: greenyellow;
+}
+/* Ici pour l'astuce au survol dans la page texte */
+#survol p{
+    display:none;
+    background-color: olive;
+    padding: 20px;
+    border-radius: 50%;
+}
+#survol:hover p {
+    display:inline;
+}
+/* #survol:hover p {
+    display:inline;
+ .survol {
+    list-style-type: none;
+    list-style-image: url(../img/globe_fleche.png);
+} */
+tr:nth-child(2n){
+    background: olive; 
+}

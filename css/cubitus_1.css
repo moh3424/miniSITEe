@@ -12,6 +12,10 @@ body{
     text-align: centre;
     color: olive;
 }
+.c1:hover{
+    background: url(../img/siamois.jpg); 
+    
+}
 .c2{
     background-color: lightcoral;
    

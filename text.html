@@ -7,6 +7,19 @@
         <title>miniSITE: accueil</title>
         <!-- la feuille de style externe -->
         <link href="css/style.css" rel="stylesheet">
+        <style>
+            /* les pseudos-class :first-child */
+            article li:first-child{
+                background: lightblue;
+            }
+            p:first-child(2){
+                background: #000;
+                color:white;
+            }
+            #nchild li:nth-child(2n){
+                background: orangered; 
+            }
+        </style>
     </head>
     <body>
         <!-- debut de la div principale -->
@@ -27,9 +40,9 @@
                             <li><a href="bordure.html" title="MiniSite:">Les Bordures</a></li>
                             <li><a href="float.html" title="MiniSite: float">Float</a></li>
                                 <ul>
-                                    <li><a href="cubitus1.html" title="Le cubitus 1">Le cubitus 1</a></li>
+                                    <li><a href="cubitus_1.html" title="Le cubitus 1">Le cubitus 1</a></li>
                                     <li><a href="damier.html" title="Le damier">Le damier</a></li>
-                                    <li><a href="cubitus2.html" title="Le cubitus 1">Le cubitus 2</a></li>
+                                    <li><a href="cubitus_2.html" title="Le cubitus 1">Le cubitus 2</a></li>
                                 </ul>
                             <li><a href="#" title="MiniSite: ">Menu</a></li>
                         </ul>   
@@ -44,6 +57,38 @@
                     <p class="fond_gris">Je suis le <span class="fond_rouge">Plus Fort en code</span>!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quae voluptatem reiciendis repudiandae excepturi aliquam blanditiis reprehenderit a nobis, ea, itaque dolorum, adipisci dolorem. Eaque temporibus voluptas officiis consequuntur.</p>
                 </article><!-- contenu contextuel -->
+                <h3>Un truc avec un hover</h3>
+                <div id="survol">
+                    Survolez cette ligne pour me faire apparaitre
+                    <p>Coucou je suis là !!!</p>
+                </div>
+                <article>
+                    <h1>Liste des cours</h1>
+                    <ul class="survol">
+                            <li>Riz</li>
+                            <li>Café</li>
+                            <li>Viande</li>
+                            <li>Bananes</li>
+                            <li>Lait</li>
+                    </ul>
+                    <h1>Ce que je fais, une fois je suis à la maison</h1>
+                    <ol class="survol">
+                        <li>Préparation du café</li>
+                        <li>Ménage</li>
+                        <li>Vesselle</li>
+                        <li>Cuisiner</li>
+                        <li>Prendre une douche </li>
+                    </ol>
+                </article>
+                <article>
+                <ol id="nchild">
+                        <li>Préparation du café</li>
+                        <li>Ménage</li>
+                        <li>Vesselle</li>
+                        <li>Cuisiner</li>
+                        <li>Prendre une douche </li>
+                    </ol>
+                </article>
             </div>
             <!-- fermeturede la div main! -->
             <div class="clear"></div>
