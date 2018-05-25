@@ -1,0 +1,12 @@
+body{
+    background: lemonchiffon;
+}
+.couleurUn{
+    background-color: aqua;
+}
+.couleurDeux{
+    background-color: lightblue;
+}
+.change{
+    border: thin solid white;
+}

@@ -8,13 +8,17 @@
     <style>
         #conteneur{
             width: 1000px;
+            margin: 0 auto;
+            paddig-top: 50px;
             background: aquamarine;
             color: blue;
-            margin: 0 auto;
+            background-image:linear-gradient(100deg, white,blue);
         }
         header{
             height: 200px;
-            background: rosybrown;
+            /* background: rosybrown; */
+            border-radius: 45%;
+            background-image:linear-gradient(60deg, white,rosybrown);
         }
         .div_un, .div_deux, .div_trois, .div_quatre{
             float: left;
@@ -34,44 +38,81 @@
 
         }
         .soucarv, .div_quatre{
-            background: violet;
+            background: rgba(26, 26, 27, 0.138);
         }
         .un, .deux, .trois, .quatre{
             float: left;
             width: 244px;
             height: 244px;
             border: 2px solid black;
+            background: url('img/siamois.jpg') repeat;
+            background-size: 244px 244px; /*cover*/
         }
         .clear{
             clear: both;
         }
         footer{
+            padding-bottom: 50px;
             border: 1px solid black;
-            background: chocolate;
-            height: 100px;
+            background-image:linear-gradient(60deg, white,rosybrown);
+            text-transform: uppercase;
+            font-size: 50px;
+            text-shadow: 5px 3px 2px #333;
             text-align: center;
+            padding-top: 50px;
         }
         .petitc{
             float: left;
             width: 118px;
             height: 118px;
             border: 2px solid black;
+            background: url('img/siamois.jpg') repeat;
+            background-size: cover;
+            border-radius: 
         }
+        h1{
+            text-transform: uppercase;
+            font-size: 50px;
+            text-shadow: 5px 3px 2px #333;
+            text-align: center;
+            padding-top: 50px;
+        }
+        nav{
+            height:50px;
+        }
+        ul li{
+            
+            margin:5px;
+            display: inline;
+            border-left: 1px solid blue;
+         }
+        li:hover{
+            /* visibility: hidden; */
+            background-color: lightblue;
+        } 
+         /* .nav_wrap, .header, .nav_wrap { width:100%; border-bottom:1px solid #e9e9e9\9; box-shadow:0 0 3px rgba(0,0,0,0.21); z-index:800000000; background:rgba(255,255,255,0.97); display:block; [b]position:fixed;[/b] height:60px; padding:0; left:0; top:0; -webkit-animation: header-anim .2s ease .027s both; animation: header-anim .2s ease .027s both; transition: background 0.3s ease-in-out 0s; } */
     </style>
 </head>
 <body>
     <div id="conteneur">
         <header>
-            <p>
-                Zone Header
-            </p>
+            <h1>
+                    siamois
+            </h1>
         </header>
    
         <nav>
-            navigateur
+           <ul>
+               <li class="nav_wrap">Menu1</li>
+               <li class="header">Menu2</li>
+               <li class="nav_wrap ">Menu3</li>
+               <li>Menu4</li>
+               <li>Menu5</li>
+           </ul>
         </nav>
         <section>
             <div class="div_un">
+                <img src="img/siamois.jpg" width="495px" height="495px">
                
             </div>
 
@@ -119,11 +160,19 @@
                     
                    
                     <div class="trois">
-                        
+                           
                     </div>
                     <div class="quatre">
-                       
-                    </div>
+                            
+                    </div><div class="petitc"></div>
+                    <div class="petitc"></div>
+                    <div class="petitc"></div>
+                    <div class="petitc"></div>
+                    <div class="petitc"></div>
+                    <div class="petitc"></div>
+                    <div class="petitc"></div>
+                    <div class="petitc"></div>
+                   
             </div>
             <div class="clear"></div>
         </section>
