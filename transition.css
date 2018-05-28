@@ -1,5 +1,11 @@
 body{
     background: lemonchiffon;
+    font-family: sans-serif; /*sans serif ou sans empattement*/
+    font-size: 1.3em;
+}
+/* les couleur de fond pour voir les div */
+h2{
+    font-size: 1.6em;
 }
 .couleurUn{
     background-color: aqua;
@@ -7,6 +13,62 @@ body{
 .couleurDeux{
     background-color: lightblue;
 }
-.change{
-    border: thin solid white;
+/* .change{
+    border-top: thin solid white;
+} */
+/* chargement des ul en tableau */
+ul{
+    list-style: none; /*suppression des puces des listes*/
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.gauche, .droite{
+    margin-top: 5em;
+}
+/* pour fair la premiere colonne du tableau */
+.gauche ul{
+    margin: 3.2em 0 0 0;
+}
+.gauche ul li{
+    border-bottom:  1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 1em;
+    width: 10em;
+}
+/* premiere li de la ul ayant la class .gauche */
+.gauche ul li:first-child{
+    border-top: 1px solid #ccc;
+}
+/* fin de la 1ere colonne */
+/* 2eme colonne */
+ul.liste li{ /*tous les li de la ul ayant la classe.liste*/
+    /* background: lightblue; */
+    border-left: 1px solid #ccc;
+}
+.droite .change ul li{ /* tous les li de la liste ul ayant la classe .change elle-meme enfant de la classe .droite*/
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 1em;
+    width: 10em;
+    text-align: centre;
+}
+.droite .change ul li:last-child{ /* le dernier li de ul ayant la classe .change elle-meme enfant de la class .droite*/
+    border: 1px solid #ccc;
+}
+
+/* effet de transition au survol de la souris */
+.droite .change ul:hover{
+    background: linear-gradient(#d5d5d5, #8a8a8a);
+    cursor: pointer;
+    transform: scale(1.1);/* echelle de zoom */
+    transition-duration: 2s; /*la durée de la transition*/
+   
+ 
+}
+/* au survol de la souris on sélectionne le premier li de la ul ayant la class .change, elle-meme enfant de la class .droite  */
+.droite .change ul:hover li:first-child{
+    background-color: #000;
+    color: white;
+   
 }
