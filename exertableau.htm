@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+     table, th, td{
+        border:1px solid #333; 
+        border-collapse: collapse;
+        /* font-weight: 700; */
+    }
+    th, td{
+        padding-right: 10em;
+    }
+    tr:hover{
+        background: blue; 
+    }
+    </style>
+</head>
+<body>
+    <h1>Un tableau avec des row fusionnées</h1>
+    <p>Lorem</p>
+    <table>
+        <tr>  <!-- table row -->     
+            <th>Nom </th>
+            <td>André Bourvil</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Téléphone</th>
+            <td>Passy 78 54</td> /*une celule de tableau*/
+        </tr>
+        <tr>
+            <td>Camembert 78 55</td>
+        </tr>
+    </table>
+
+    <h1>Un tableau avec des row fusionnées</h1>
+    <p>Lorem</p>
+    <table>
+        <tr>
+            <th>Nom </th>
+            <td>Yessad Mohamed</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Téléphone</th>
+            <td>0667805598</td>
+        </tr>
+        <tr>
+            <td>0147805698</td>
+        </tr>
+    </table>
+    
+    
+</body>
+</html>
